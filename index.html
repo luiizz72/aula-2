@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Um convite especial</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <section id="inicio" class="tela ativa">
+        <div class="imagem">
+          <img src="sera.png" alt="Convite inicial" />
+        </div>
+
+        <h1>Você quer sair comigo?</h1>
+
+        <div class="botoes">
+          <button type="button" id="sim">Sim</button>
+          <span class="ou">OU</span>
+          <button type="button" id="nao">Não</button>
+        </div>
+      </section>
+
+      <section id="dataTela" class="tela">
+        <div class="imagem">
+          <img src="vamo.png" alt="Vamos" />
+        </div>
+        <p>Eu esperava você dizer não kkk</p>
+        <h1>Quando você tá livre?</h1>
+
+        <p>Escolha uma data para o nosso encontro ❤️</p>
+
+        <input
+          type="text"
+          id="data"
+          placeholder="dd/mm/aaaa"
+          maxlength="10"
+          inputmode="numeric"
+        />
+
+        <button type="button" id="continuar" disabled>Continuar</button>
+      </section>
+
+      <section id="comida" class="tela">
+        <h1>Qual tipo de comida você prefere?</h1>
+
+        <div class="comidas">
+          <button type="button" data-comida="Pizza">🍕 Pizza</button>
+          <button type="button" data-comida="Hambúrguer">🍔 Podrâo</button>
+          <button type="button" data-comida="Japonês">🍣 Japonês</button>
+          <button type="button" data-comida="Massa">🍝 Massa</button>
+          <button type="button" data-comida="Outro">Escolhe você</button>
+        </div>
+      </section>
+
+      <section id="final" class="tela">
+        <div class="imagem-final">
+          <img src="ping.png" alt="Pinguim fofo" />
+        </div>
+
+        <h1>Nosso encontro está confirmado ❤️</h1>
+
+        <video autoplay muted loop playsinline>
+          <source src="bola.mp4" type="video/mp4" />
+        </video>
+
+        <div id="resumo"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
